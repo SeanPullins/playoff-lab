@@ -1,0 +1,31 @@
+{
+  "modelVersion": "2.0.0",
+  "training": "2010\u20132021 regular seasons",
+  "test": "2023\u20132025 regular seasons; one chronological evaluation, no tuning on this test",
+  "method": "Opponent-adjusted point-margin ridge rating; previous-season ratings retain 60% of their prior value; 6-game ridge shrinkage; margins capped at 28; 0.97 weekly recency decay. Logistic coefficients fitted only on 2010\u20132021.",
+  "coefficients": [
+    0.1384374725024988,
+    0.26054910852747903,
+    0.0224455745628648
+  ],
+  "upgraded": {
+    "games": 816,
+    "brier": 0.22391,
+    "logLoss": 0.63878,
+    "accuracy": 0.63113
+  },
+  "original": {
+    "games": 816,
+    "brier": 0.2306,
+    "logLoss": 0.65348,
+    "accuracy": 0.62745
+  },
+  "brierDifference95CI": [
+    -0.014056785237418438,
+    0.0009908606353269884
+  ],
+  "intervalNote": "Paired game bootstrap; games are correlated, so interval is descriptive and may be optimistic.",
+  "playoffCalibration": "Not backtested for playoff-event probabilities. Game-level results do not establish playoff-odds calibration.",
+  "source": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
+  "sourceSha256": "f36f8f67ebd6c2e04c86d7ab974d83b5fa82b3cf47c1ddb2598ae01801afb00a"
+}

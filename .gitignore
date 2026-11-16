@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+scripts/history.csv
+node_modules/
