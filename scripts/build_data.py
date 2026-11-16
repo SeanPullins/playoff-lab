@@ -37,12 +37,12 @@ def main():
  for board in boards:
   for e in board.get('events',[]):
    c=e['competitions'][0];h=next(x for x in c['competitors'] if x['homeAway']=='home');a=next(x for x in c['competitors'] if x['homeAway']=='away')
-   live[e['id']]={'h':team(h['team']['abbreviation']),'a':team(a['team']['abbreviation']),'hs':int(h.get('score',0)),'as_':int(a.get('score',0)),'done':e['status']['type']['completed'],'date':e['date'],'neutral':bool(c.get('neutralSite',False))}
+   live[e['id']]={'h':team(h['team']['abbreviation']),'a':team(a['team']['abbreviation']),'hs':int(h.get('score',0)),'as_':int(a.get('score',0)),'done':e['status']['type']['completed'],'date':e['date'],'neutral':bool(c.get('neutralSite',False)),'timeTBD':not c.get('timeValid',True)}
  assert len(live)==272,'Incomplete ESPN season; retain previous published snapshot'
  for g in rows:
   if g['season']==2026 and g['game_type']=='REG':
    e=live[g['espn']];assert (g['h'],g['a'])==(e['h'],e['a']),'Source matchup disagreement'
-   g.update({k:e[k] for k in ['hs','as_','done','date']});g['location']='Neutral' if e['neutral'] else 'Home'
+   g.update({k:e[k] for k in ['hs','as_','done','date','timeTBD']});g['location']='Neutral' if e['neutral'] else 'Home'
  regs=[r for r in rows if r['game_type']=='REG'];features=[];prior={};snapshots={}
  for year in range(2009,2027):
   season=[g for g in regs if g['season']==year];prior={t:.6*prior.get(t,0) for t in TEAMS};past=[]
@@ -66,7 +66,7 @@ def main():
  report={'modelVersion':'2.0.0','training':'2010–2021 regular seasons','test':'2023–2025 regular seasons; one chronological evaluation, no tuning on this test','method':'Opponent-adjusted point-margin ridge rating; previous-season ratings retain 60% of their prior value; 6-game ridge shrinkage; margins capped at 28; 0.97 weekly recency decay. Logistic coefficients fitted only on 2010–2021.','coefficients':beta.tolist(),'upgraded':metrics(pred),'original':metrics(old),'brierDifference95CI':np.quantile(delta,[.025,.975]).tolist(),'intervalNote':'Paired game bootstrap; games are correlated, so interval is descriptive and may be optimistic.','playoffCalibration':'Not backtested for playoff-event probabilities. Game-level results do not establish playoff-odds calibration.','source':URL,'sourceSha256':hashlib.sha256(raw).hexdigest()}
  current=snapshots['season'];games=[]
  for g in current:
-  x=feature(g,snapshots['ratings']);p=float(1/(1+np.exp(-np.dot(x,beta))));games.append({'id':g.get('espn') or g['game_id'],'week':g['week'],'date':g['date'],'h':g['h'],'a':g['a'],'hs':int(g['hs']),'as_':int(g['as_']),'done':g['done'],'neutral':g['location']=='Neutral','p':round(max(.02,min(.98,p)),6)})
+  x=feature(g,snapshots['ratings']);p=float(1/(1+np.exp(-np.dot(x,beta))));games.append({'id':g.get('espn') or g['game_id'],'week':g['week'],'date':g['date'],'timeTBD':g.get('timeTBD',False),'h':g['h'],'a':g['a'],'hs':int(g['hs']),'as_':int(g['as_']),'done':g['done'],'neutral':g['location']=='Neutral','p':round(max(.02,min(.98,p)),6)})
  assert len(games)==272 and len(set(g['id'] for g in games))==272
  for t in TEAMS:assert sum(t in (g['h'],g['a']) for g in games)==17
  data={'season':2026,'updated':datetime.datetime.now(datetime.timezone.utc).isoformat(),'source':'ESPN scoreboard (2026 schedule and results); nflverse (history and rest)','historySourceSha256':report['sourceSha256'],'sourceSha256':hashlib.sha256(raw+json.dumps(live,sort_keys=True).encode()).hexdigest(),'ratings':{t:round(float(r),3) for t,r in snapshots['ratings'].items()},'games':games,'model':report}

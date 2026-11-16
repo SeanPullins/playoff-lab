@@ -1,1 +1,11 @@
-{"name":"playoff-lab","version":"2.0.0","private":true,"description":"NFL playoff scenario explorer with chronological model evaluation","scripts":{"test":"node tests/model.test.js","check":"node --check dist/app.js && node --check dist/engine.js && npm test","data":"python scripts/build_data.py"}}
+{
+  "name": "playoff-lab",
+  "version": "3.0.0",
+  "private": true,
+  "description": "NFL playoff scenario explorer with chronological model evaluation",
+  "scripts": {
+    "test": "node tests/model.test.js",
+    "check": "node --check dist/app.js && node --check dist/engine.js && node --check dist/hub.js && npm test && python tests/community_test.py",
+    "data": "python scripts/build_data.py"
+  }
+}

@@ -1,0 +1,47 @@
+name: Publish community submission
+on:
+  workflow_dispatch:
+  issues:
+    types: [opened]
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: site-writes
+  cancel-in-progress: false
+jobs:
+  community:
+    if: github.event_name == 'workflow_dispatch' || startsWith(github.event.issue.title, 'TEMU | ')
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate and freeze opened submission
+        run: python scripts/community.py
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm run check
+      - name: Store accepted submission
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add dist/community.json
+          git diff --staged --quiet || git commit -m 'Record validated community submission'
+          git push
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - uses: actions/deploy-pages@v4
+        id: deploy

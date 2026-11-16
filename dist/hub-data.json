@@ -1,0 +1,834 @@
+{
+  "updated": "2026-11-16T14:56:39.790521+00:00",
+  "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/cle/roster?season=2026",
+  "players": [
+    {
+      "id": "4597310",
+      "name": "Austin Barber",
+      "position": "OT",
+      "jersey": "58"
+    },
+    {
+      "id": "4430949",
+      "name": "Austin Blaske",
+      "position": "OT",
+      "jersey": ""
+    },
+    {
+      "id": "4808839",
+      "name": "Isaiah Bond",
+      "position": "WR",
+      "jersey": "0"
+    },
+    {
+      "id": "4832800",
+      "name": "Denzel Boston",
+      "position": "WR",
+      "jersey": "12"
+    },
+    {
+      "id": "4816090",
+      "name": "Parker Brailsford",
+      "position": "C",
+      "jersey": "52"
+    },
+    {
+      "id": "4870653",
+      "name": "KC Concepcion",
+      "position": "WR",
+      "jersey": "1"
+    },
+    {
+      "id": "4613104",
+      "name": "Malachi Corley",
+      "position": "WR",
+      "jersey": "11"
+    },
+    {
+      "id": "5083076",
+      "name": "Harold Fannin Jr.",
+      "position": "TE",
+      "jersey": "44"
+    },
+    {
+      "id": "4870723",
+      "name": "Spencer Fano",
+      "position": "OT",
+      "jersey": "55"
+    },
+    {
+      "id": "4427238",
+      "name": "Dillon Gabriel",
+      "position": "QB",
+      "jersey": "6"
+    },
+    {
+      "id": "4431325",
+      "name": "Taylen Green",
+      "position": "QB",
+      "jersey": "15"
+    },
+    {
+      "id": "3131498",
+      "name": "Tytus Howard",
+      "position": "OT",
+      "jersey": "71"
+    },
+    {
+      "id": "3115485",
+      "name": "Elgton Jenkins",
+      "position": "C",
+      "jersey": "74"
+    },
+    {
+      "id": "4241463",
+      "name": "Jerry Jeudy",
+      "position": "WR",
+      "jersey": "3"
+    },
+    {
+      "id": "4247347",
+      "name": "Zion Johnson",
+      "position": "G",
+      "jersey": "77"
+    },
+    {
+      "id": "4427637",
+      "name": "Dawand Jones",
+      "position": "OT",
+      "jersey": "79"
+    },
+    {
+      "id": "4685702",
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "jersey": "10"
+    },
+    {
+      "id": "4722893",
+      "name": "Jaleel McLaughlin",
+      "position": "RB",
+      "jersey": "38"
+    },
+    {
+      "id": "4876006",
+      "name": "Zaire Mitchell-Paden",
+      "position": "TE",
+      "jersey": "80"
+    },
+    {
+      "id": "4685540",
+      "name": "Carsen Ryan",
+      "position": "TE",
+      "jersey": "48"
+    },
+    {
+      "id": "5081397",
+      "name": "Dylan Sampson",
+      "position": "RB",
+      "jersey": "22"
+    },
+    {
+      "id": "4432762",
+      "name": "Shedeur Sanders",
+      "position": "QB",
+      "jersey": "2"
+    },
+    {
+      "id": "4241424",
+      "name": "Tylan Wallace",
+      "position": "WR",
+      "jersey": "16"
+    },
+    {
+      "id": "3122840",
+      "name": "Deshaun Watson",
+      "position": "QB",
+      "jersey": "4"
+    },
+    {
+      "id": "4362018",
+      "name": "Blake Whiteheart",
+      "position": "TE",
+      "jersey": "86"
+    },
+    {
+      "id": "4430806",
+      "name": "Luke Wypler",
+      "position": "C",
+      "jersey": "56"
+    },
+    {
+      "id": "4433963",
+      "name": "Zak Zinter",
+      "position": "G",
+      "jersey": "70"
+    },
+    {
+      "id": "3115336",
+      "name": "Derek Barnett",
+      "position": "DE",
+      "jersey": "97"
+    },
+    {
+      "id": "4360677",
+      "name": "Mekhi Blackmon",
+      "position": "CB",
+      "jersey": "29"
+    },
+    {
+      "id": "4379397",
+      "name": "Tyson Campbell",
+      "position": "CB",
+      "jersey": "7"
+    },
+    {
+      "id": "3040471",
+      "name": "Maliek Collins",
+      "position": "DT",
+      "jersey": "96"
+    },
+    {
+      "id": "4242208",
+      "name": "Grant Delpit",
+      "position": "S",
+      "jersey": "9"
+    },
+    {
+      "id": "4873232",
+      "name": "Mason Graham",
+      "position": "DT",
+      "jersey": "94"
+    },
+    {
+      "id": "4600415",
+      "name": "Mike Hall Jr.",
+      "position": "DT",
+      "jersey": "51"
+    },
+    {
+      "id": "4695783",
+      "name": "Myles Harden",
+      "position": "CB",
+      "jersey": "26"
+    },
+    {
+      "id": "4569620",
+      "name": "Ronnie Hickman",
+      "position": "S",
+      "jersey": "33"
+    },
+    {
+      "id": "4605792",
+      "name": "Adin Huntington",
+      "position": "DE",
+      "jersey": "98"
+    },
+    {
+      "id": "4242516",
+      "name": "Noah Igbinoghene",
+      "position": "CB",
+      "jersey": "20"
+    },
+    {
+      "id": "5150249",
+      "name": "Justin Jefferson",
+      "position": "LB",
+      "jersey": "17"
+    },
+    {
+      "id": "4033855",
+      "name": "Sam Kamara",
+      "position": "DT",
+      "jersey": "92"
+    },
+    {
+      "id": "5085888",
+      "name": "Easton Mascarenas-Arnold",
+      "position": "LB",
+      "jersey": "42"
+    },
+    {
+      "id": "4427963",
+      "name": "Isaiah McGuire",
+      "position": "DE",
+      "jersey": "57"
+    },
+    {
+      "id": "4686027",
+      "name": "Donovan McMillon",
+      "position": "S",
+      "jersey": "31"
+    },
+    {
+      "id": "4837186",
+      "name": "Emmanuel McNeil-Warren",
+      "position": "S",
+      "jersey": "28"
+    },
+    {
+      "id": "4698598",
+      "name": "Toriano Pride Jr.",
+      "position": "CB",
+      "jersey": "35"
+    },
+    {
+      "id": "4251125",
+      "name": "Winston Reid",
+      "position": "LB",
+      "jersey": "59"
+    },
+    {
+      "id": "4876017",
+      "name": "Carson Schwesinger",
+      "position": "LB",
+      "jersey": "49"
+    },
+    {
+      "id": "4035505",
+      "name": "Daniel Thomas",
+      "position": "S",
+      "jersey": "24"
+    },
+    {
+      "id": "4578085",
+      "name": "Jared Verse",
+      "position": "DE",
+      "jersey": "8"
+    },
+    {
+      "id": "3915535",
+      "name": "Denzel Ward",
+      "position": "CB",
+      "jersey": "21"
+    },
+    {
+      "id": "3110565",
+      "name": "Quincy Williams",
+      "position": "LB",
+      "jersey": "5"
+    },
+    {
+      "id": "4567242",
+      "name": "Sam Williams",
+      "position": "LB",
+      "jersey": "54"
+    },
+    {
+      "id": "4039396",
+      "name": "Corey Bojorquez",
+      "position": "P",
+      "jersey": "13"
+    },
+    {
+      "id": "3913293",
+      "name": "Rex Sunahara",
+      "position": "LS",
+      "jersey": "50"
+    },
+    {
+      "id": "4258620",
+      "name": "Andre Szmyt",
+      "position": "PK",
+      "jersey": "25"
+    },
+    {
+      "id": "2515270",
+      "name": "Michael Burton",
+      "position": "FB",
+      "jersey": "34"
+    },
+    {
+      "id": "4429392",
+      "name": "Elijah Chatman",
+      "position": "DT",
+      "jersey": "62"
+    },
+    {
+      "id": "4243541",
+      "name": "Kalia Davis",
+      "position": "DT",
+      "jersey": "93"
+    },
+    {
+      "id": "4038457",
+      "name": "Teven Jenkins",
+      "position": "G",
+      "jersey": "78"
+    },
+    {
+      "id": "4240707",
+      "name": "Damarri Mathis",
+      "position": "CB",
+      "jersey": "37"
+    },
+    {
+      "id": "4258599",
+      "name": "Jeremiah Owusu-Koramoah",
+      "position": "LB",
+      "jersey": "6"
+    },
+    {
+      "id": "4565859",
+      "name": "Joe Royer",
+      "position": "TE",
+      "jersey": "18"
+    },
+    {
+      "id": "4601080",
+      "name": "Raheim Sanders",
+      "position": "RB",
+      "jersey": "23"
+    },
+    {
+      "id": "4374280",
+      "name": "Edefuan Ulofoshio",
+      "position": "LB",
+      "jersey": "54"
+    },
+    {
+      "id": "4570119",
+      "name": "Alex Wright",
+      "position": "DE",
+      "jersey": "91"
+    },
+    {
+      "id": "4035817",
+      "name": "Krys Barnes",
+      "position": "LB",
+      "jersey": ""
+    },
+    {
+      "id": "5160391",
+      "name": "Michael Coats Jr.",
+      "position": "CB",
+      "jersey": "39"
+    },
+    {
+      "id": "4243386",
+      "name": "Obinna Eze",
+      "position": "OT",
+      "jersey": ""
+    },
+    {
+      "id": "5080699",
+      "name": "Logan Fano",
+      "position": "DE",
+      "jersey": "97"
+    },
+    {
+      "id": "4695910",
+      "name": "Xavier Guillory",
+      "position": "WR",
+      "jersey": ""
+    },
+    {
+      "id": "4372071",
+      "name": "Hassan Haskins",
+      "position": "RB",
+      "jersey": ""
+    },
+    {
+      "id": "4708486",
+      "name": "Jimmy Horn Jr.",
+      "position": "WR",
+      "jersey": ""
+    },
+    {
+      "id": "4373079",
+      "name": "KT Leveston",
+      "position": "OT",
+      "jersey": "72"
+    },
+    {
+      "id": "4690083",
+      "name": "Wes Pahl",
+      "position": "P",
+      "jersey": "36"
+    },
+    {
+      "id": "4683129",
+      "name": "Khordae Sydnor",
+      "position": "DE",
+      "jersey": "90"
+    },
+    {
+      "id": "4427080",
+      "name": "Xavier Truss",
+      "position": "OT",
+      "jersey": ""
+    },
+    {
+      "id": "5081483",
+      "name": "Nadame Tucker",
+      "position": "DE",
+      "jersey": ""
+    },
+    {
+      "id": "4709014",
+      "name": "Zion Washington",
+      "position": "S",
+      "jersey": "34"
+    },
+    {
+      "id": "4362895",
+      "name": "Nathaniel Watson",
+      "position": "LB",
+      "jersey": "40"
+    }
+  ],
+  "statistics": {
+    "BUF": {
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/buf/statistics?season=2026",
+      "checked": "2026-11-16T14:56:43.779033+00:00",
+      "passingYPG": 234.0,
+      "rushingYPG": 152.7,
+      "yardsPerRush": 4.7,
+      "sacksForPG": 2.3333333333333335,
+      "sacksAllowedPG": 2.0,
+      "thirdDownPct": 40.952,
+      "turnoverDiff": 0.0
+    },
+    "MIA": {
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/mia/statistics?season=2026",
+      "checked": "2026-11-16T14:56:43.523434+00:00",
+      "passingYPG": 170.33333,
+      "rushingYPG": 113.1,
+      "yardsPerRush": 4.2,
+      "sacksForPG": 1.4444444444444444,
+      "sacksAllowedPG": 3.0,
+      "thirdDownPct": 40.179,
+      "turnoverDiff": -2.0
+    },
+    "NE": {
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/ne/statistics?season=2026",
+      "checked": "2026-11-16T14:56:43.531840+00:00",
+      "passingYPG": 233.6,
+      "rushingYPG": 114.0,
+      "yardsPerRush": 4.1,
+      "sacksForPG": 2.7,
+      "sacksAllowedPG": 2.5,
+      "thirdDownPct": 39.344,
+      "turnoverDiff": -10.0
+    },
+    "NYJ": {
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/nyj/statistics?season=2026",
+      "checked": "2026-11-16T14:56:43.519155+00:00",
+      "passingYPG": 210.9,
+      "rushingYPG": 105.6,
+      "yardsPerRush": 4.2,
+      "sacksForPG": 2.3,
+      "sacksAllowedPG": 3.2,
+      "thirdDownPct": 34.127,
+      "turnoverDiff": 3.0
+    },
+    "BAL": {
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/bal/statistics?season=2026",
+      "checked": "2026-11-16T14:56:43.683136+00:00",
+      "passingYPG": 188.44444,
+      "rushingYPG": 137.8,
+      "yardsPerRush": 4.7,
+      "sacksForPG": 1.8888888888888888,
+      "sacksAllowedPG": 2.5555555555555554,
+      "thirdDownPct": 37.838,
+      "turnoverDiff": -2.0
+    },
+    "CIN": {
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/cin/statistics?season=2026",
+      "checked": "2026-11-16T14:56:43.499583+00:00",
+      "passingYPG": 298.8889,
+      "rushingYPG": 84.8,
+      "yardsPerRush": 3.9,
+      "sacksForPG": 2.888888888888889,
+      "sacksAllowedPG": 1.7777777777777777,
+      "thirdDownPct": 51.923,
+      "turnoverDiff": 2.0
+    },
+    "CLE": {
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/cle/statistics?season=2026",
+      "checked": "2026-11-16T14:56:46.679306+00:00",
+      "passingYPG": 217.4,
+      "rushingYPG": 97.5,
+      "yardsPerRush": 3.8,
+      "sacksForPG": 2.7,
+      "sacksAllowedPG": 4.2,
+      "thirdDownPct": 35.556,
+      "turnoverDiff": 1.0
+    },
+    "PIT": {
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/pit/statistics?season=2026",
+      "checked": "2026-11-16T14:56:46.677377+00:00",
+      "passingYPG": 200.44444,
+      "rushingYPG": 116.1,
+      "yardsPerRush": 4.8,
+      "sacksForPG": 3.0,
+      "sacksAllowedPG": 2.888888888888889,
+      "thirdDownPct": 37.931,
+      "turnoverDiff": 5.0
+    },
+    "HOU": {
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/hou/statistics?season=2026",
+      "checked": "2026-11-16T14:56:46.611448+00:00",
+      "passingYPG": 261.8889,
+      "rushingYPG": 87.2,
+      "yardsPerRush": 3.6,
+      "sacksForPG": 3.6666666666666665,
+      "sacksAllowedPG": 1.8888888888888888,
+      "thirdDownPct": 38.261,
+      "turnoverDiff": 4.0
+    },
+    "IND": {
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/ind/statistics?season=2026",
+      "checked": "2026-11-16T14:56:46.735416+00:00",
+      "passingYPG": 166.7,
+      "rushingYPG": 120.9,
+      "yardsPerRush": 4.3,
+      "sacksForPG": 2.2,
+      "sacksAllowedPG": 2.6,
+      "thirdDownPct": 36.09,
+      "turnoverDiff": -12.0
+    },
+    "JAX": {
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/jax/statistics?season=2026",
+      "checked": "2026-11-16T14:56:46.567180+00:00",
+      "passingYPG": 241.11111,
+      "rushingYPG": 117.8,
+      "yardsPerRush": 4.0,
+      "sacksForPG": 1.8888888888888888,
+      "sacksAllowedPG": 1.5555555555555556,
+      "thirdDownPct": 46.847,
+      "turnoverDiff": 9.0
+    },
+    "TEN": {
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/ten/statistics?season=2026",
+      "checked": "2026-11-16T14:56:46.602991+00:00",
+      "passingYPG": 178.44444,
+      "rushingYPG": 100.1,
+      "yardsPerRush": 4.4,
+      "sacksForPG": 2.3333333333333335,
+      "sacksAllowedPG": 1.5555555555555556,
+      "thirdDownPct": 34.286,
+      "turnoverDiff": -1.0
+    },
+    "DEN": {
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/den/statistics?season=2026",
+      "checked": "2026-11-16T14:56:50.355182+00:00",
+      "passingYPG": 185.88889,
+      "rushingYPG": 91.4,
+      "yardsPerRush": 3.7,
+      "sacksForPG": 2.888888888888889,
+      "sacksAllowedPG": 1.2222222222222223,
+      "thirdDownPct": 32.432,
+      "turnoverDiff": 5.0
+    },
+    "KC": {
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/kc/statistics?season=2026",
+      "checked": "2026-11-16T14:56:50.387036+00:00",
+      "passingYPG": 256.66666,
+      "rushingYPG": 136.0,
+      "yardsPerRush": 5.0,
+      "sacksForPG": 1.8888888888888888,
+      "sacksAllowedPG": 1.3333333333333333,
+      "thirdDownPct": 40.367,
+      "turnoverDiff": 6.0
+    },
+    "LAC": {
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/lac/statistics?season=2026",
+      "checked": "2026-11-16T14:56:50.391408+00:00",
+      "passingYPG": 177.125,
+      "rushingYPG": 114.5,
+      "yardsPerRush": 4.1,
+      "sacksForPG": 1.625,
+      "sacksAllowedPG": 3.875,
+      "thirdDownPct": 34.211,
+      "turnoverDiff": -7.0
+    },
+    "LV": {
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/lv/statistics?season=2026",
+      "checked": "2026-11-16T14:56:50.375373+00:00",
+      "passingYPG": 243.5,
+      "rushingYPG": 70.7,
+      "yardsPerRush": 2.9,
+      "sacksForPG": 2.2,
+      "sacksAllowedPG": 1.7,
+      "thirdDownPct": 43.411,
+      "turnoverDiff": 3.0
+    },
+    "DAL": {
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/dal/statistics?season=2026",
+      "checked": "2026-11-16T14:56:50.359403+00:00",
+      "passingYPG": 265.5,
+      "rushingYPG": 102.8,
+      "yardsPerRush": 4.0,
+      "sacksForPG": 2.2,
+      "sacksAllowedPG": 1.5,
+      "thirdDownPct": 45.113,
+      "turnoverDiff": -3.0
+    },
+    "NYG": {
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/nyg/statistics?season=2026",
+      "checked": "2026-11-16T14:56:50.415009+00:00",
+      "passingYPG": 227.88889,
+      "rushingYPG": 112.6,
+      "yardsPerRush": 3.9,
+      "sacksForPG": 1.8888888888888888,
+      "sacksAllowedPG": 3.111111111111111,
+      "thirdDownPct": 39.683,
+      "turnoverDiff": -2.0
+    },
+    "PHI": {
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/phi/statistics?season=2026",
+      "checked": "2026-11-16T14:56:55.251166+00:00",
+      "passingYPG": 171.66667,
+      "rushingYPG": 88.6,
+      "yardsPerRush": 3.7,
+      "sacksForPG": 1.7777777777777777,
+      "sacksAllowedPG": 3.3333333333333335,
+      "thirdDownPct": 35.938,
+      "turnoverDiff": -4.0
+    },
+    "WSH": {
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/wsh/statistics?season=2026",
+      "checked": "2026-11-16T14:56:55.295079+00:00",
+      "passingYPG": 210.22223,
+      "rushingYPG": 116.8,
+      "yardsPerRush": 4.3,
+      "sacksForPG": 2.0,
+      "sacksAllowedPG": 2.3333333333333335,
+      "thirdDownPct": 33.333,
+      "turnoverDiff": 7.0
+    },
+    "CHI": {
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/chi/statistics?season=2026",
+      "checked": "2026-11-16T14:56:55.319224+00:00",
+      "passingYPG": 241.0,
+      "rushingYPG": 142.0,
+      "yardsPerRush": 4.2,
+      "sacksForPG": 2.888888888888889,
+      "sacksAllowedPG": 2.2222222222222223,
+      "thirdDownPct": 45.313,
+      "turnoverDiff": -4.0
+    },
+    "DET": {
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/det/statistics?season=2026",
+      "checked": "2026-11-16T14:56:55.495762+00:00",
+      "passingYPG": 257.66666,
+      "rushingYPG": 134.8,
+      "yardsPerRush": 4.6,
+      "sacksForPG": 3.5555555555555554,
+      "sacksAllowedPG": 2.3333333333333335,
+      "thirdDownPct": 39.45,
+      "turnoverDiff": 2.0
+    },
+    "GB": {
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/gb/statistics?season=2026",
+      "checked": "2026-11-16T14:56:55.350999+00:00",
+      "passingYPG": 268.1,
+      "rushingYPG": 67.0,
+      "yardsPerRush": 3.1,
+      "sacksForPG": 2.9,
+      "sacksAllowedPG": 2.5,
+      "thirdDownPct": 37.209,
+      "turnoverDiff": 5.0
+    },
+    "MIN": {
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/min/statistics?season=2026",
+      "checked": "2026-11-16T14:56:55.587148+00:00",
+      "passingYPG": 163.22223,
+      "rushingYPG": 108.6,
+      "yardsPerRush": 4.0,
+      "sacksForPG": 4.111111111111111,
+      "sacksAllowedPG": 2.888888888888889,
+      "thirdDownPct": 35.484,
+      "turnoverDiff": 8.0
+    },
+    "ATL": {
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/atl/statistics?season=2026",
+      "checked": "2026-11-16T14:56:58.044273+00:00",
+      "passingYPG": 193.9,
+      "rushingYPG": 133.5,
+      "yardsPerRush": 4.8,
+      "sacksForPG": 2.1,
+      "sacksAllowedPG": 1.9,
+      "thirdDownPct": 34.426,
+      "turnoverDiff": -10.0
+    },
+    "CAR": {
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/car/statistics?season=2026",
+      "checked": "2026-11-16T14:56:58.153148+00:00",
+      "passingYPG": 252.77777,
+      "rushingYPG": 100.8,
+      "yardsPerRush": 4.1,
+      "sacksForPG": 1.6666666666666667,
+      "sacksAllowedPG": 3.2222222222222223,
+      "thirdDownPct": 36.667,
+      "turnoverDiff": 1.0
+    },
+    "NO": {
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/no/statistics?season=2026",
+      "checked": "2026-11-16T14:56:58.339136+00:00",
+      "passingYPG": 224.11111,
+      "rushingYPG": 90.1,
+      "yardsPerRush": 3.6,
+      "sacksForPG": 2.888888888888889,
+      "sacksAllowedPG": 2.5555555555555554,
+      "thirdDownPct": 42.969,
+      "turnoverDiff": -8.0
+    },
+    "TB": {
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/tb/statistics?season=2026",
+      "checked": "2026-11-16T14:56:58.191091+00:00",
+      "passingYPG": 141.88889,
+      "rushingYPG": 163.9,
+      "yardsPerRush": 5.0,
+      "sacksForPG": 1.8888888888888888,
+      "sacksAllowedPG": 3.0,
+      "thirdDownPct": 36.29,
+      "turnoverDiff": 7.0
+    },
+    "ARI": {
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/ari/statistics?season=2026",
+      "checked": "2026-11-16T14:56:58.171377+00:00",
+      "passingYPG": 202.7,
+      "rushingYPG": 95.8,
+      "yardsPerRush": 4.0,
+      "sacksForPG": 2.1,
+      "sacksAllowedPG": 2.8,
+      "thirdDownPct": 36.364,
+      "turnoverDiff": -1.0
+    },
+    "LAR": {
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/lar/statistics?season=2026",
+      "checked": "2026-11-16T14:56:58.293886+00:00",
+      "passingYPG": 252.4,
+      "rushingYPG": 133.0,
+      "yardsPerRush": 4.6,
+      "sacksForPG": 2.1,
+      "sacksAllowedPG": 1.5,
+      "thirdDownPct": 41.803,
+      "turnoverDiff": -3.0
+    },
+    "SF": {
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/sf/statistics?season=2026",
+      "checked": "2026-11-16T14:57:02.768341+00:00",
+      "passingYPG": 255.77777,
+      "rushingYPG": 144.0,
+      "yardsPerRush": 4.9,
+      "sacksForPG": 1.7777777777777777,
+      "sacksAllowedPG": 1.4444444444444444,
+      "thirdDownPct": 52.0,
+      "turnoverDiff": 3.0
+    },
+    "SEA": {
+      "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/sea/statistics?season=2026",
+      "checked": "2026-11-16T14:57:02.767240+00:00",
+      "passingYPG": 218.5,
+      "rushingYPG": 114.7,
+      "yardsPerRush": 3.9,
+      "sacksForPG": 2.7,
+      "sacksAllowedPG": 2.2,
+      "thirdDownPct": 39.37,
+      "turnoverDiff": -3.0
+    }
+  }
+}

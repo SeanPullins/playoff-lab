@@ -8,7 +8,7 @@ permissions:
   pages: write
   id-token: write
 concurrency:
-  group: refresh
+  group: site-writes
   cancel-in-progress: false
 jobs:
   refresh:
@@ -18,11 +18,14 @@ jobs:
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - run: pip install -r requirements.txt
       - run: OPENBLAS_NUM_THREADS=1 python scripts/build_data.py
+      - run: python scripts/build_hub.py
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -31,7 +34,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add dist/data.json dist/validation.json
+          git add dist/data.json dist/validation.json dist/hub-data.json
           git diff --staged --quiet || git commit -m 'Refresh NFL snapshot and opponent-adjusted ratings'
           git push
       - uses: actions/configure-pages@v5
