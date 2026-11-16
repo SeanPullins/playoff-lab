@@ -1,4 +1,4 @@
-# Playoff Lab
+# TEMU PLAYOFF PREDICTOR
 
 An independent NFL playoff prediction model and mobile-friendly scenario explorer. Pick any remaining regular-season game, leave games open to simulate, and see playoff, division, bye and seed probabilities.
 
