@@ -73,3 +73,7 @@ Latest valid pick submissions update only games that were still open at creation
 TBD kickoffs are labeled and excluded from competitive submissions until confirmed. The simulation can still explore their outcomes. Community tallies appear after validation and deployment, typically within a few minutes; scoring waits for the daily published results snapshot. Daily refresh and community writes share a serialized workflow group.
 
 For a no-vote smoke check, run **Publish community submission** manually from Actions; it validates existing pending issues and publishes the community snapshot without fabricating entries. Unit checks cover deadline enforcement, invalid inputs, immutable records and literal handling of shell/HTML metacharacters.
+
+## UX update (November 2026)
+
+The responsive shell opens on Browns HQ with grouped desktop navigation, mobile bottom navigation, and a searchable feature menu (Ctrl/Cmd K). The simulator includes a mobile week selector, filter chips, clear pick states, and a persistent odds shortcut. Shared pick links open directly in the simulator; saved scenarios and model details remain available from the feature menu. Fonts are served locally under `dist/fonts`, with their OFL licenses. The forecasting engine and community submission validation are unchanged.
