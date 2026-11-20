@@ -45,3 +45,5 @@ for(let id of ['methodBtn','accuracyBtn'])$(id).onclick=()=>{if(data)renderMetho
 
 function setPickingMode(value){guided=value;document.body.classList.toggle('guided-picking',value);$('guidedMode').classList.toggle('active',value);$('listMode').classList.toggle('active',!value);$('guidedMode').setAttribute('aria-pressed',String(value));$('listMode').setAttribute('aria-pressed',String(!value));renderGames()}
 $('guidedMode').onclick=()=>setPickingMode(true);$('listMode').onclick=()=>setPickingMode(false);$('jumpToGames').onclick=()=>document.querySelector('.games-section').scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+
+function pickRestOfSeason(){if(!data)return;let next={...picks},added=0;for(const g of data.games){if(!g.done&&next[g.id]===undefined){next[g.id]=g.p>=.5?1:0;added++}}applyPicks(next);toast(added+' remaining games picked using model favorites. Your existing picks were kept. Undo is available.')}document.querySelectorAll('[data-pick-season]').forEach(b=>b.onclick=pickRestOfSeason);
