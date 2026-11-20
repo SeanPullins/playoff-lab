@@ -4,8 +4,8 @@
   "private": true,
   "description": "NFL playoff scenario explorer with chronological model evaluation",
   "scripts": {
-    "test": "node tests/model.test.js",
-    "check": "node --check dist/results.js && node --check dist/app.js && node --check dist/engine.js && node --check dist/hub.js && node --check dist/experience.js && npm test && python tests/community_test.py",
+    "test": "node tests/model.test.js && node tests/draft.test.js",
+    "check": "node --check dist/draft.js && node --check dist/results.js && node --check dist/app.js && node --check dist/engine.js && node --check dist/hub.js && node --check dist/experience.js && npm test && python tests/community_test.py",
     "data": "python scripts/build_data.py"
   }
 }
