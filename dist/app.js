@@ -46,4 +46,35 @@ for(let id of ['methodBtn','accuracyBtn'])$(id).onclick=()=>{if(data)renderMetho
 function setPickingMode(value){guided=value;document.body.classList.toggle('guided-picking',value);$('guidedMode').classList.toggle('active',value);$('listMode').classList.toggle('active',!value);$('guidedMode').setAttribute('aria-pressed',String(value));$('listMode').setAttribute('aria-pressed',String(!value));renderGames()}
 $('guidedMode').onclick=()=>setPickingMode(true);$('listMode').onclick=()=>setPickingMode(false);$('jumpToGames').onclick=()=>document.querySelector('.games-section').scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
 
-function pickRestOfSeason(){if(!data)return;let next={...picks},added=0;for(const g of data.games){if(!g.done&&next[g.id]===undefined){next[g.id]=g.p>=.5?1:0;added++}}applyPicks(next);toast(added+' remaining games picked using model favorites. Your existing picks were kept. Undo is available.')}document.querySelectorAll('[data-pick-season]').forEach(b=>b.onclick=pickRestOfSeason);
+function autoPickGames(scope, selectedWeek){
+ if(!data)return;
+ const next={...picks};let added=0;
+ for(const g of data.games){
+  if(!g.done&&next[g.id]===undefined&&(scope==='season'||+g.week===+selectedWeek)){
+   next[g.id]=g.p>=.5?1:0;added++;
+  }
+ }
+ if(!added){toast('No unpicked games left in '+(scope==='season'?'the season':'Week '+selectedWeek)+'. Clear picks to start over.');return}
+ applyPicks(next);
+ toast(added+' games auto-picked'+(scope==='season'?' for the rest of the season':' in Week '+selectedWeek)+'. Existing picks kept. Undo is available.');
+}
+function renderAutoPick(){
+ if(!data)return;
+ const select=$('autoPickWeek'),old=select.value;
+ const weeks=[...new Set(data.games.filter(g=>!g.done).map(g=>+g.week))].sort((a,b)=>a-b);
+ select.innerHTML=weeks.map(w=>`<option value="${w}">Week ${w}</option>`).join('');
+ select.value=weeks.includes(+old)?old:String(weeks.includes(+week)?week:weeks[0]||'');
+ const remaining=data.games.filter(g=>!g.done&&picks[g.id]===undefined);
+ const count=remaining.filter(g=>+g.week===+select.value).length;
+ $('autoPickWeekButton').textContent=select.value?'Auto-pick Week '+select.value+' ('+count+')':'No remaining weeks';
+ $('autoPickWeekButton').disabled=!count;select.disabled=!weeks.length;
+ document.querySelectorAll('[data-pick-season]').forEach(b=>{b.textContent='Auto-pick rest of season ('+remaining.length+')';b.disabled=!remaining.length});
+ $('autoPickSummary').textContent=remaining.length+' unpicked games this season · '+count+' in '+(select.value?'Week '+select.value:'the selected week');
+}
+$('autoPickWeek').onchange=renderAutoPick;
+$('autoPickWeekButton').onclick=()=>autoPickGames('week',$('autoPickWeek').value);
+document.querySelectorAll('[data-pick-season]').forEach(b=>b.onclick=()=>autoPickGames('season'));
+$('favorites').textContent='Auto-pick games…';
+$('favorites').onclick=()=>{if(week!=='all')$('autoPickWeek').value=String(week);renderAutoPick();document.querySelector('.season-autopick').scrollIntoView({block:'center',behavior:'smooth'});$('autoPickWeekButton').focus({preventScroll:true})};
+document.addEventListener('lab:state',renderAutoPick);
+document.addEventListener('lab:update',renderAutoPick);
