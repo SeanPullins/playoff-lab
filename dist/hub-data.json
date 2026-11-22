@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22T12:43:23.077649+00:00",
+  "updated": "2026-11-22T20:47:01.305043+00:00",
   "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/cle/roster?season=2026",
   "players": [
     {
@@ -480,7 +480,7 @@
   "statistics": {
     "BUF": {
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/buf/statistics?season=2026",
-      "checked": "2026-11-22T12:43:23.151263+00:00",
+      "checked": "2026-11-22T20:47:01.532215+00:00",
       "passingYPG": 234.0,
       "rushingYPG": 152.7,
       "yardsPerRush": 4.7,
@@ -491,7 +491,7 @@
     },
     "MIA": {
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/mia/statistics?season=2026",
-      "checked": "2026-11-22T12:43:23.378651+00:00",
+      "checked": "2026-11-22T20:47:01.484807+00:00",
       "passingYPG": 170.33333,
       "rushingYPG": 113.1,
       "yardsPerRush": 4.2,
@@ -502,7 +502,7 @@
     },
     "NE": {
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/ne/statistics?season=2026",
-      "checked": "2026-11-22T12:43:23.340917+00:00",
+      "checked": "2026-11-22T20:47:01.522289+00:00",
       "passingYPG": 233.6,
       "rushingYPG": 114.0,
       "yardsPerRush": 4.1,
@@ -513,7 +513,7 @@
     },
     "NYJ": {
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/nyj/statistics?season=2026",
-      "checked": "2026-11-22T12:43:23.155951+00:00",
+      "checked": "2026-11-22T20:47:01.499562+00:00",
       "passingYPG": 210.9,
       "rushingYPG": 105.6,
       "yardsPerRush": 4.2,
@@ -524,7 +524,7 @@
     },
     "BAL": {
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/bal/statistics?season=2026",
-      "checked": "2026-11-22T12:43:23.157225+00:00",
+      "checked": "2026-11-22T20:47:01.513937+00:00",
       "passingYPG": 202.7,
       "rushingYPG": 125.6,
       "yardsPerRush": 4.5,
@@ -535,7 +535,7 @@
     },
     "CIN": {
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/cin/statistics?season=2026",
-      "checked": "2026-11-22T12:43:23.160374+00:00",
+      "checked": "2026-11-22T20:47:01.515575+00:00",
       "passingYPG": 298.8889,
       "rushingYPG": 84.8,
       "yardsPerRush": 3.9,
@@ -546,7 +546,7 @@
     },
     "CLE": {
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/cle/statistics?season=2026",
-      "checked": "2026-11-22T12:43:23.230744+00:00",
+      "checked": "2026-11-22T20:47:01.700945+00:00",
       "passingYPG": 217.4,
       "rushingYPG": 97.5,
       "yardsPerRush": 3.8,
@@ -557,7 +557,7 @@
     },
     "PIT": {
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/pit/statistics?season=2026",
-      "checked": "2026-11-22T12:43:23.234210+00:00",
+      "checked": "2026-11-22T20:47:01.731022+00:00",
       "passingYPG": 200.44444,
       "rushingYPG": 116.1,
       "yardsPerRush": 4.8,
@@ -568,7 +568,7 @@
     },
     "HOU": {
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/hou/statistics?season=2026",
-      "checked": "2026-11-22T12:43:23.226509+00:00",
+      "checked": "2026-11-22T20:47:01.663769+00:00",
       "passingYPG": 254.4,
       "rushingYPG": 95.2,
       "yardsPerRush": 3.7,
@@ -579,7 +579,7 @@
     },
     "IND": {
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/ind/statistics?season=2026",
-      "checked": "2026-11-22T12:43:23.232982+00:00",
+      "checked": "2026-11-22T20:47:01.676621+00:00",
       "passingYPG": 163.27272,
       "rushingYPG": 113.4,
       "yardsPerRush": 4.2,
@@ -590,7 +590,7 @@
     },
     "JAX": {
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/jax/statistics?season=2026",
-      "checked": "2026-11-22T12:43:23.299783+00:00",
+      "checked": "2026-11-22T20:47:01.911445+00:00",
       "passingYPG": 241.11111,
       "rushingYPG": 117.8,
       "yardsPerRush": 4.0,
@@ -601,7 +601,7 @@
     },
     "TEN": {
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/ten/statistics?season=2026",
-      "checked": "2026-11-22T12:43:24.530187+00:00",
+      "checked": "2026-11-22T20:47:01.773083+00:00",
       "passingYPG": 178.44444,
       "rushingYPG": 100.1,
       "yardsPerRush": 4.4,
@@ -612,7 +612,7 @@
     },
     "DEN": {
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/den/statistics?season=2026",
-      "checked": "2026-11-22T12:43:23.302038+00:00",
+      "checked": "2026-11-22T20:47:01.843688+00:00",
       "passingYPG": 185.88889,
       "rushingYPG": 91.4,
       "yardsPerRush": 3.7,
@@ -623,7 +623,7 @@
     },
     "KC": {
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/kc/statistics?season=2026",
-      "checked": "2026-11-22T12:43:23.303365+00:00",
+      "checked": "2026-11-22T20:47:01.842511+00:00",
       "passingYPG": 256.66666,
       "rushingYPG": 136.0,
       "yardsPerRush": 5.0,
@@ -634,7 +634,7 @@
     },
     "LAC": {
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/lac/statistics?season=2026",
-      "checked": "2026-11-22T12:43:23.411377+00:00",
+      "checked": "2026-11-22T20:47:02.063176+00:00",
       "passingYPG": 171.55556,
       "rushingYPG": 119.6,
       "yardsPerRush": 4.2,
@@ -645,7 +645,7 @@
     },
     "LV": {
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/lv/statistics?season=2026",
-      "checked": "2026-11-22T12:43:23.384681+00:00",
+      "checked": "2026-11-22T20:47:01.893176+00:00",
       "passingYPG": 243.5,
       "rushingYPG": 70.7,
       "yardsPerRush": 2.9,
@@ -656,7 +656,7 @@
     },
     "DAL": {
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/dal/statistics?season=2026",
-      "checked": "2026-11-22T12:43:23.440928+00:00",
+      "checked": "2026-11-22T20:47:01.964584+00:00",
       "passingYPG": 265.5,
       "rushingYPG": 102.8,
       "yardsPerRush": 4.0,
@@ -667,7 +667,7 @@
     },
     "NYG": {
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/nyg/statistics?season=2026",
-      "checked": "2026-11-22T12:43:23.427952+00:00",
+      "checked": "2026-11-22T20:47:02.039888+00:00",
       "passingYPG": 227.88889,
       "rushingYPG": 112.6,
       "yardsPerRush": 3.9,
@@ -678,7 +678,7 @@
     },
     "PHI": {
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/phi/statistics?season=2026",
-      "checked": "2026-11-22T12:43:23.439408+00:00",
+      "checked": "2026-11-22T20:47:02.015751+00:00",
       "passingYPG": 171.66667,
       "rushingYPG": 88.6,
       "yardsPerRush": 3.7,
@@ -689,7 +689,7 @@
     },
     "WSH": {
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/wsh/statistics?season=2026",
-      "checked": "2026-11-22T12:43:23.445948+00:00",
+      "checked": "2026-11-22T20:47:02.037282+00:00",
       "passingYPG": 210.22223,
       "rushingYPG": 116.8,
       "yardsPerRush": 4.3,
@@ -700,7 +700,7 @@
     },
     "CHI": {
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/chi/statistics?season=2026",
-      "checked": "2026-11-22T12:43:23.486028+00:00",
+      "checked": "2026-11-22T20:47:02.122974+00:00",
       "passingYPG": 241.0,
       "rushingYPG": 142.0,
       "yardsPerRush": 4.2,
@@ -711,7 +711,7 @@
     },
     "DET": {
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/det/statistics?season=2026",
-      "checked": "2026-11-22T12:43:23.518923+00:00",
+      "checked": "2026-11-22T20:47:02.151245+00:00",
       "passingYPG": 257.66666,
       "rushingYPG": 134.8,
       "yardsPerRush": 4.6,
@@ -722,7 +722,7 @@
     },
     "GB": {
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/gb/statistics?season=2026",
-      "checked": "2026-11-22T12:43:23.509251+00:00",
+      "checked": "2026-11-22T20:47:02.169076+00:00",
       "passingYPG": 268.1,
       "rushingYPG": 67.0,
       "yardsPerRush": 3.1,
@@ -733,7 +733,7 @@
     },
     "MIN": {
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/min/statistics?season=2026",
-      "checked": "2026-11-22T12:43:23.548118+00:00",
+      "checked": "2026-11-22T20:47:02.520326+00:00",
       "passingYPG": 163.22223,
       "rushingYPG": 108.6,
       "yardsPerRush": 4.0,
@@ -744,7 +744,7 @@
     },
     "ATL": {
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/atl/statistics?season=2026",
-      "checked": "2026-11-22T12:43:23.508118+00:00",
+      "checked": "2026-11-22T20:47:02.311538+00:00",
       "passingYPG": 193.9,
       "rushingYPG": 133.5,
       "yardsPerRush": 4.8,
@@ -755,7 +755,7 @@
     },
     "CAR": {
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/car/statistics?season=2026",
-      "checked": "2026-11-22T12:43:23.574034+00:00",
+      "checked": "2026-11-22T20:47:02.205845+00:00",
       "passingYPG": 252.77777,
       "rushingYPG": 100.8,
       "yardsPerRush": 4.1,
@@ -766,7 +766,7 @@
     },
     "NO": {
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/no/statistics?season=2026",
-      "checked": "2026-11-22T12:43:23.622154+00:00",
+      "checked": "2026-11-22T20:47:02.409046+00:00",
       "passingYPG": 224.11111,
       "rushingYPG": 90.1,
       "yardsPerRush": 3.6,
@@ -777,7 +777,7 @@
     },
     "TB": {
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/tb/statistics?season=2026",
-      "checked": "2026-11-22T12:43:23.615831+00:00",
+      "checked": "2026-11-22T20:47:02.332838+00:00",
       "passingYPG": 141.88889,
       "rushingYPG": 163.9,
       "yardsPerRush": 5.0,
@@ -788,7 +788,7 @@
     },
     "ARI": {
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/ari/statistics?season=2026",
-      "checked": "2026-11-22T12:43:23.605079+00:00",
+      "checked": "2026-11-22T20:47:02.418983+00:00",
       "passingYPG": 202.7,
       "rushingYPG": 95.8,
       "yardsPerRush": 4.0,
@@ -799,7 +799,7 @@
     },
     "LAR": {
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/lar/statistics?season=2026",
-      "checked": "2026-11-22T12:43:23.640274+00:00",
+      "checked": "2026-11-22T20:47:02.464831+00:00",
       "passingYPG": 252.4,
       "rushingYPG": 133.0,
       "yardsPerRush": 4.6,
@@ -810,7 +810,7 @@
     },
     "SF": {
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/sf/statistics?season=2026",
-      "checked": "2026-11-22T12:43:23.639516+00:00",
+      "checked": "2026-11-22T20:47:02.779529+00:00",
       "passingYPG": 255.77777,
       "rushingYPG": 144.0,
       "yardsPerRush": 4.9,
@@ -821,7 +821,7 @@
     },
     "SEA": {
       "source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/sea/statistics?season=2026",
-      "checked": "2026-11-22T12:43:23.674012+00:00",
+      "checked": "2026-11-22T20:47:02.498801+00:00",
       "passingYPG": 218.5,
       "rushingYPG": 114.7,
       "yardsPerRush": 3.9,

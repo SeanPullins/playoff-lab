@@ -4,9 +4,9 @@
   "test": "2023\u20132025 regular seasons; one chronological evaluation, no tuning on this test",
   "method": "Opponent-adjusted point-margin ridge rating; previous-season ratings retain 60% of their prior value; 6-game ridge shrinkage; margins capped at 28; 0.97 weekly recency decay. Logistic coefficients fitted only on 2010\u20132021.",
   "coefficients": [
-    0.13843747417274432,
-    0.26054915917839155,
-    0.022445576037376454
+    0.1384374725024988,
+    0.26054910852747903,
+    0.0224455745628648
   ],
   "upgraded": {
     "games": 816,
@@ -21,11 +21,11 @@
     "accuracy": 0.62745
   },
   "brierDifference95CI": [
-    -0.014056784644286075,
-    0.0009908616787645316
+    -0.014056785237418438,
+    0.0009908606353269884
   ],
   "intervalNote": "Paired game bootstrap; games are correlated, so interval is descriptive and may be optimistic.",
   "playoffCalibration": "Not backtested for playoff-event probabilities. Game-level results do not establish playoff-odds calibration.",
   "source": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
-  "sourceSha256": "d85ca15772a35b8a37865e3efb28d0e300c29c0af1250247bcda97e9c4d4979f"
+  "sourceSha256": "eb3de2728d3bfcacc9655d697e6c3bf14b016eb152ddf4b496e51409d08cc5e2"
 }
