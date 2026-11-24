@@ -1,4 +1,4 @@
-const assert=require('node:assert/strict');const {simulate,selectBest,TEAMS,IX}=require('../dist/engine.js');const data=require('../dist/data.json');
+const assert=require('node:assert/strict');const {sampleMargin,simulate,selectBest,TEAMS,IX}=require('../dist/engine.js');const data=require('../dist/data.json');
 function ctx(){return {w:Array(32).fill(10),n:Array(32).fill(17),hh:new Float32Array(1024),hn:new Uint8Array(1024),dw:Array(32).fill(3),dn:Array(32).fill(6),cw:Array(32).fill(7),cn:Array(32).fill(12),pf:Array(32).fill(350),pa:Array(32).fill(350),cpf:Array(32).fill(200),cpa:Array(32).fill(200),net:new Int16Array(1024),beaten:TEAMS.map(()=>[]),schedule:TEAMS.map(()=>[]),noise:TEAMS.map((_,i)=>i/32),fallbacks:0}}
 function game(c,a,b,v){a=IX[a];b=IX[b];c.hh[a*32+b]+=v;c.hh[b*32+a]+=1-v;c.hn[a*32+b]++;c.hn[b*32+a]++;c.schedule[a].push(b);c.schedule[b].push(a)}
 let c=ctx();game(c,'CLE','PIT',1);assert.equal(selectBest([IX.CLE,IX.PIT],c,true),IX.CLE,'division head to head');
@@ -9,7 +9,15 @@ c=ctx();game(c,'BUF','KC',.5);c.cw[IX.KC]=8;assert.equal(selectBest([IX.BUF,IX.K
 assert.equal(data.games.length,272);assert.equal(new Set(data.games.map(g=>g.id)).size,272);for(const t of TEAMS)assert.equal(data.games.filter(g=>[g.h,g.a].includes(t)).length,17);
 const a=simulate(data,{},500),b=simulate(data,{},500);assert.deepEqual(a,b,'seed reproducibility');for(const [key,total] of [['play',14],['division',8],['bye',2]])assert.equal(Object.values(a.result).reduce((s,r)=>s+r[key],0),500*total);
 for(const r of Object.values(a.result)){assert.equal(r.seeds.reduce((s,v)=>s+v,0),500);assert.equal(r.records.reduce((s,v)=>s+v,0),500);assert(r.bye<=r.division&&r.division<=r.play)}
-const p=Object.fromEntries(data.games.filter(g=>!g.done&&[g.h,g.a].includes('CLE')).map(g=>[g.id,g.h==='CLE'?1:0]));const winout=simulate(data,p,100);assert.equal(winout.result.CLE.wins/100,a.base.CLE.w+data.games.filter(g=>!g.done&&[g.h,g.a].includes('CLE')).length+a.base.CLE.t/2,'locked wins respected');
+const p=Object.fromEntries(data.games.filter(g=>!g.done&&[g.h,g.a].includes('CLE')).map(g=>[g.id,g.h==='CLE'?1:0]));const winout=simulate(data,p,100);assert.equal(winout.result.CLE.wins/100,a.base.CLE.w+data.games.filter(g=>!g.done&&[g.h,g.a].includes('CLE')).length,'locked wins respected');
 assert.equal(winout.result.CLE.noTieRecords[Math.round(winout.result.CLE.wins/100)],100,'conditional record buckets preserve locked outcomes');assert.equal(winout.result.CLE.noTiePlayoffs[Math.round(winout.result.CLE.wins/100)],winout.result.CLE.play,'conditional playoff buckets match qualification');
-const ties=Object.fromEntries(data.games.filter(g=>!g.done).map(g=>[g.id,.5]));const allTies=simulate(data,ties,20);for(const t of TEAMS)assert.equal(allTies.result[t].wins/20,allTies.base[t].w+allTies.base[t].t/2+.5*data.games.filter(g=>!g.done&&[g.h,g.a].includes(t)).length,'locked ties respected');
+const ties=Object.fromEntries(data.games.filter(g=>!g.done).map(g=>[g.id,.5]));const allTies=simulate(data,ties,20);for(const t of TEAMS)assert.equal(allTies.result[t].wins/20,allTies.base[t].w,'locked ties respected');
 console.log('PASS: five tiebreaker fixtures, schedule integrity, reproducibility, qualification and seed totals, locked wins and ties.');
+
+for (const t of TEAMS) assert.equal(allTies.result[t].records[a.base[t].w],20);
+for (const q of [.01,.25,.5,.75,.99]) {
+ assert.equal(sampleMargin(.8,1,q), -sampleMargin(.2,0,q));
+ assert.equal(sampleMargin(.8,.5,q), 0);
+ assert(sampleMargin(.8,1,q) >= Math.abs(sampleMargin(.8,0,q)));
+}
+assert(sampleMargin(.8,1,.5) > Math.abs(sampleMargin(.8,0,.5)));
