@@ -27,5 +27,5 @@
   "intervalNote": "Paired game bootstrap; games are correlated, so interval is descriptive and may be optimistic.",
   "playoffCalibration": "Not backtested for playoff-event probabilities. Game-level results do not establish playoff-odds calibration.",
   "source": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
-  "sourceSha256": "4a60c622c627a4baedac0e47f676b15147b6e94c7af9541993d5a9b9024ac270"
+  "sourceSha256": "4c31bffe754d0eb0aff11de35b342b6876db1e797a58c00c368b6eb589cf97ef"
 }
